@@ -1,0 +1,300 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structgr_1_1rfid_1_1READER__STATS" kind="struct" language="C++" prot="public">
+    <compoundname>gr::rfid::READER_STATS</compoundname>
+    <includes refid="global__vars_8h" local="no">global_vars.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structgr_1_1rfid_1_1READER__STATS_1a1527719d36aa694a9975ba8b315da1f9" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::rfid::READER_STATS::n_queries_sent</definition>
+        <argsstring></argsstring>
+        <name>n_queries_sent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/laura/Documents/FSA-Gen2/gr-rfid/include/rfid/global_vars.h" line="38" column="1" bodyfile="/home/laura/Documents/FSA-Gen2/gr-rfid/include/rfid/global_vars.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgr_1_1rfid_1_1READER__STATS_1a68aa26b264f037219b59591685a7a470" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::rfid::READER_STATS::cur_inventory_round</definition>
+        <argsstring></argsstring>
+        <name>cur_inventory_round</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/laura/Documents/FSA-Gen2/gr-rfid/include/rfid/global_vars.h" line="40" column="1" bodyfile="/home/laura/Documents/FSA-Gen2/gr-rfid/include/rfid/global_vars.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgr_1_1rfid_1_1READER__STATS_1a24fbcfab7343a50159c6a78031d1a786" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::rfid::READER_STATS::cur_slot_number</definition>
+        <argsstring></argsstring>
+        <name>cur_slot_number</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/laura/Documents/FSA-Gen2/gr-rfid/include/rfid/global_vars.h" line="41" column="1" bodyfile="/home/laura/Documents/FSA-Gen2/gr-rfid/include/rfid/global_vars.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgr_1_1rfid_1_1READER__STATS_1ace809496ad18add9d8ec9b1ad8fef4d0" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::rfid::READER_STATS::max_slot_number</definition>
+        <argsstring></argsstring>
+        <name>max_slot_number</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/laura/Documents/FSA-Gen2/gr-rfid/include/rfid/global_vars.h" line="43" column="1" bodyfile="/home/laura/Documents/FSA-Gen2/gr-rfid/include/rfid/global_vars.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgr_1_1rfid_1_1READER__STATS_1af0ae16885e598080b93b03d218ba8a87" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::rfid::READER_STATS::max_inventory_round</definition>
+        <argsstring></argsstring>
+        <name>max_inventory_round</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/laura/Documents/FSA-Gen2/gr-rfid/include/rfid/global_vars.h" line="44" column="1" bodyfile="/home/laura/Documents/FSA-Gen2/gr-rfid/include/rfid/global_vars.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgr_1_1rfid_1_1READER__STATS_1a8ef95b2c22b5349a8a9842678ed80cc7" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::rfid::READER_STATS::n_epc_correct</definition>
+        <argsstring></argsstring>
+        <name>n_epc_correct</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/laura/Documents/FSA-Gen2/gr-rfid/include/rfid/global_vars.h" line="46" column="1" bodyfile="/home/laura/Documents/FSA-Gen2/gr-rfid/include/rfid/global_vars.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgr_1_1rfid_1_1READER__STATS_1a18865aecbf5beed81c738809911d1bd1" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::rfid::READER_STATS::n_0</definition>
+        <argsstring></argsstring>
+        <name>n_0</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/laura/Documents/FSA-Gen2/gr-rfid/include/rfid/global_vars.h" line="48" column="1" bodyfile="/home/laura/Documents/FSA-Gen2/gr-rfid/include/rfid/global_vars.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgr_1_1rfid_1_1READER__STATS_1a4217a867a7d95b119a125c5c0b3263a0" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::rfid::READER_STATS::n_1</definition>
+        <argsstring></argsstring>
+        <name>n_1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/laura/Documents/FSA-Gen2/gr-rfid/include/rfid/global_vars.h" line="49" column="1" bodyfile="/home/laura/Documents/FSA-Gen2/gr-rfid/include/rfid/global_vars.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgr_1_1rfid_1_1READER__STATS_1aee6b85dfd6db5904fc27bd17e778f8dc" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::rfid::READER_STATS::n_k</definition>
+        <argsstring></argsstring>
+        <name>n_k</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/laura/Documents/FSA-Gen2/gr-rfid/include/rfid/global_vars.h" line="50" column="1" bodyfile="/home/laura/Documents/FSA-Gen2/gr-rfid/include/rfid/global_vars.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgr_1_1rfid_1_1READER__STATS_1ad9f7263f9694cf4c57afad3e1297870b" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float gr::rfid::READER_STATS::output_energy</definition>
+        <argsstring></argsstring>
+        <name>output_energy</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/laura/Documents/FSA-Gen2/gr-rfid/include/rfid/global_vars.h" line="52" column="1" bodyfile="/home/laura/Documents/FSA-Gen2/gr-rfid/include/rfid/global_vars.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgr_1_1rfid_1_1READER__STATS_1ab58f2a3efc35ce064a5d817e1dc0e492" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::rfid::READER_STATS::tn_k</definition>
+        <argsstring></argsstring>
+        <name>tn_k</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/laura/Documents/FSA-Gen2/gr-rfid/include/rfid/global_vars.h" line="54" column="1" bodyfile="/home/laura/Documents/FSA-Gen2/gr-rfid/include/rfid/global_vars.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgr_1_1rfid_1_1READER__STATS_1a0c2ae76a7c426df7af30e19ee78a8a52" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::rfid::READER_STATS::tn_1</definition>
+        <argsstring></argsstring>
+        <name>tn_1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/laura/Documents/FSA-Gen2/gr-rfid/include/rfid/global_vars.h" line="55" column="1" bodyfile="/home/laura/Documents/FSA-Gen2/gr-rfid/include/rfid/global_vars.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgr_1_1rfid_1_1READER__STATS_1aa2644c27d75b4ec65e0488dff0c409a8" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::rfid::READER_STATS::tn_0</definition>
+        <argsstring></argsstring>
+        <name>tn_0</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/laura/Documents/FSA-Gen2/gr-rfid/include/rfid/global_vars.h" line="56" column="1" bodyfile="/home/laura/Documents/FSA-Gen2/gr-rfid/include/rfid/global_vars.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgr_1_1rfid_1_1READER__STATS_1af583b2a28e7cd3973f8f0994ee526ce4" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::rfid::READER_STATS::tQA</definition>
+        <argsstring></argsstring>
+        <name>tQA</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/laura/Documents/FSA-Gen2/gr-rfid/include/rfid/global_vars.h" line="57" column="1" bodyfile="/home/laura/Documents/FSA-Gen2/gr-rfid/include/rfid/global_vars.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgr_1_1rfid_1_1READER__STATS_1aca615dbc28a4334fb05228bf5a0ba2a1" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::rfid::READER_STATS::tQR</definition>
+        <argsstring></argsstring>
+        <name>tQR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/laura/Documents/FSA-Gen2/gr-rfid/include/rfid/global_vars.h" line="58" column="1" bodyfile="/home/laura/Documents/FSA-Gen2/gr-rfid/include/rfid/global_vars.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgr_1_1rfid_1_1READER__STATS_1a30028e5cdab2f81d1cd5462a3cb3ae13" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::rfid::READER_STATS::Qupdn</definition>
+        <argsstring></argsstring>
+        <name>Qupdn</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/laura/Documents/FSA-Gen2/gr-rfid/include/rfid/global_vars.h" line="60" column="1" bodyfile="/home/laura/Documents/FSA-Gen2/gr-rfid/include/rfid/global_vars.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgr_1_1rfid_1_1READER__STATS_1afa72a20bba0ffd675737a4119c03f36c" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; int &gt;</type>
+        <definition>std::vector&lt;int&gt; gr::rfid::READER_STATS::unique_tags_round</definition>
+        <argsstring></argsstring>
+        <name>unique_tags_round</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/laura/Documents/FSA-Gen2/gr-rfid/include/rfid/global_vars.h" line="63" column="1" bodyfile="/home/laura/Documents/FSA-Gen2/gr-rfid/include/rfid/global_vars.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgr_1_1rfid_1_1READER__STATS_1a64222623f51729e30a7b517d61e203f8" prot="public" static="no" mutable="no">
+        <type>std::map&lt; int, int &gt;</type>
+        <definition>std::map&lt;int,int&gt; gr::rfid::READER_STATS::tag_reads</definition>
+        <argsstring></argsstring>
+        <name>tag_reads</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/laura/Documents/FSA-Gen2/gr-rfid/include/rfid/global_vars.h" line="64" column="1" bodyfile="/home/laura/Documents/FSA-Gen2/gr-rfid/include/rfid/global_vars.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgr_1_1rfid_1_1READER__STATS_1a1fb2661b3ef8726c185692a6e01aad95" prot="public" static="no" mutable="no">
+        <type>struct timeval start</type>
+        <definition>struct timeval start gr::rfid::READER_STATS::end</definition>
+        <argsstring></argsstring>
+        <name>end</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/laura/Documents/FSA-Gen2/gr-rfid/include/rfid/global_vars.h" line="64" column="1" bodyfile="/home/laura/Documents/FSA-Gen2/gr-rfid/include/rfid/global_vars.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="29">
+        <label>gr::rfid::READER_STATS</label>
+        <link refid="structgr_1_1rfid_1_1READER__STATS"/>
+        <childnode refid="30" relation="usage">
+          <edgelabel>tag_reads</edgelabel>
+        </childnode>
+        <childnode refid="31" relation="usage">
+          <edgelabel>unique_tags_round</edgelabel>
+        </childnode>
+      </node>
+      <node id="30">
+        <label>std::map&lt; int, int &gt;</label>
+      </node>
+      <node id="31">
+        <label>std::vector&lt; int &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/laura/Documents/FSA-Gen2/gr-rfid/include/rfid/global_vars.h" line="37" column="1" bodyfile="/home/laura/Documents/FSA-Gen2/gr-rfid/include/rfid/global_vars.h" bodystart="36" bodyend="67"/>
+    <listofallmembers>
+      <member refid="structgr_1_1rfid_1_1READER__STATS_1a68aa26b264f037219b59591685a7a470" prot="public" virt="non-virtual"><scope>gr::rfid::READER_STATS</scope><name>cur_inventory_round</name></member>
+      <member refid="structgr_1_1rfid_1_1READER__STATS_1a24fbcfab7343a50159c6a78031d1a786" prot="public" virt="non-virtual"><scope>gr::rfid::READER_STATS</scope><name>cur_slot_number</name></member>
+      <member refid="structgr_1_1rfid_1_1READER__STATS_1a1fb2661b3ef8726c185692a6e01aad95" prot="public" virt="non-virtual"><scope>gr::rfid::READER_STATS</scope><name>end</name></member>
+      <member refid="structgr_1_1rfid_1_1READER__STATS_1af0ae16885e598080b93b03d218ba8a87" prot="public" virt="non-virtual"><scope>gr::rfid::READER_STATS</scope><name>max_inventory_round</name></member>
+      <member refid="structgr_1_1rfid_1_1READER__STATS_1ace809496ad18add9d8ec9b1ad8fef4d0" prot="public" virt="non-virtual"><scope>gr::rfid::READER_STATS</scope><name>max_slot_number</name></member>
+      <member refid="structgr_1_1rfid_1_1READER__STATS_1a18865aecbf5beed81c738809911d1bd1" prot="public" virt="non-virtual"><scope>gr::rfid::READER_STATS</scope><name>n_0</name></member>
+      <member refid="structgr_1_1rfid_1_1READER__STATS_1a4217a867a7d95b119a125c5c0b3263a0" prot="public" virt="non-virtual"><scope>gr::rfid::READER_STATS</scope><name>n_1</name></member>
+      <member refid="structgr_1_1rfid_1_1READER__STATS_1a8ef95b2c22b5349a8a9842678ed80cc7" prot="public" virt="non-virtual"><scope>gr::rfid::READER_STATS</scope><name>n_epc_correct</name></member>
+      <member refid="structgr_1_1rfid_1_1READER__STATS_1aee6b85dfd6db5904fc27bd17e778f8dc" prot="public" virt="non-virtual"><scope>gr::rfid::READER_STATS</scope><name>n_k</name></member>
+      <member refid="structgr_1_1rfid_1_1READER__STATS_1a1527719d36aa694a9975ba8b315da1f9" prot="public" virt="non-virtual"><scope>gr::rfid::READER_STATS</scope><name>n_queries_sent</name></member>
+      <member refid="structgr_1_1rfid_1_1READER__STATS_1ad9f7263f9694cf4c57afad3e1297870b" prot="public" virt="non-virtual"><scope>gr::rfid::READER_STATS</scope><name>output_energy</name></member>
+      <member refid="structgr_1_1rfid_1_1READER__STATS_1a30028e5cdab2f81d1cd5462a3cb3ae13" prot="public" virt="non-virtual"><scope>gr::rfid::READER_STATS</scope><name>Qupdn</name></member>
+      <member refid="structgr_1_1rfid_1_1READER__STATS_1a64222623f51729e30a7b517d61e203f8" prot="public" virt="non-virtual"><scope>gr::rfid::READER_STATS</scope><name>tag_reads</name></member>
+      <member refid="structgr_1_1rfid_1_1READER__STATS_1aa2644c27d75b4ec65e0488dff0c409a8" prot="public" virt="non-virtual"><scope>gr::rfid::READER_STATS</scope><name>tn_0</name></member>
+      <member refid="structgr_1_1rfid_1_1READER__STATS_1a0c2ae76a7c426df7af30e19ee78a8a52" prot="public" virt="non-virtual"><scope>gr::rfid::READER_STATS</scope><name>tn_1</name></member>
+      <member refid="structgr_1_1rfid_1_1READER__STATS_1ab58f2a3efc35ce064a5d817e1dc0e492" prot="public" virt="non-virtual"><scope>gr::rfid::READER_STATS</scope><name>tn_k</name></member>
+      <member refid="structgr_1_1rfid_1_1READER__STATS_1af583b2a28e7cd3973f8f0994ee526ce4" prot="public" virt="non-virtual"><scope>gr::rfid::READER_STATS</scope><name>tQA</name></member>
+      <member refid="structgr_1_1rfid_1_1READER__STATS_1aca615dbc28a4334fb05228bf5a0ba2a1" prot="public" virt="non-virtual"><scope>gr::rfid::READER_STATS</scope><name>tQR</name></member>
+      <member refid="structgr_1_1rfid_1_1READER__STATS_1afa72a20bba0ffd675737a4119c03f36c" prot="public" virt="non-virtual"><scope>gr::rfid::READER_STATS</scope><name>unique_tags_round</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
