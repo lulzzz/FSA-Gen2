@@ -47,8 +47,9 @@ namespace gr {
 
       int n_0;
       int n_1;
-      int n_k;
+      int n_k; // number of collision slots per frame
 
+      
       float output_energy;
       
       int tn_k;  
@@ -57,7 +58,8 @@ namespace gr {
       int tQA;
       int tQR;
 
-      int initial_state;
+      float th;
+      int stop;
 
       int Qupdn;
       
@@ -107,7 +109,7 @@ namespace gr {
     const int P_DOWN_D     = 2000;    // power down
     const int T1_D         = 240;    // Time from Interrogator transmission to Tag response (250 us)
     const int T2_D         = 480;    // Time from Tag response to Interrogator transmission. Max value = 20.0 * T_tag = 500us 
-    const int PW_D         = 12;      // Half Tari 
+    const int PW_D         = 12;      // Half Tari in us
     const int DELIM_D       = 12;      // A preamble shall comprise a fixed-length start delimiter 12.5us +/-5%
     const int TRCAL_D     = 200;    // BLF = DR/TRCAL => 40e3 = 8/TRCAL => TRCAL = 200us
     const int RTCAL_D     = 72;      // 6*PW = 72us
@@ -136,6 +138,14 @@ namespace gr {
     const int TREXT         = 0;
     const int DR            = 0;
 
+    //Slots duration
+    const int Tack = 0.0;
+    const int TQR = 0.0; // duration of QR command in us
+    const int TQA = 0.0; // duration of QA command in us
+    const int TQ = 0.0; // duration of Q command in us
+
+    const float Tsk = T1_D + RN16_D + T2_D + Tack + T1_D + EPC_D + T2_D;  //Duration of single/collision slot in us
+    const float Ti = T1_D + RN16_D + T2_D; //Duration of idle slot in us
 
     const int NAK_CODE[8]   = {1,1,0,0,0,0,0,0};
 
@@ -158,7 +168,7 @@ namespace gr {
     // Duration in which dc offset is estimated (T1_D is 250)
     const int DC_SIZE_D         = 120;
 
-    const float E_th = 0.5;
+    const float E_th = 0.1;
 
     // Global variable
     extern READER_STATE * reader_state;

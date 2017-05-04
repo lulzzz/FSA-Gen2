@@ -46,16 +46,16 @@ class reader_top_block(gr.top_block):
     gr.top_block.__init__(self)
 
 
-    #rt = gr.enable_realtime_scheduling() 
+    #rt = gr.enable_realtime_scheduling() # ******************************************************************************
 
     ######## Variables #########
     self.dac_rate = 1e6                 # DAC rate 
     self.adc_rate = 100e6/50            # ADC rate (2MS/s complex samples)
     self.decim     = 5                    # Decimation (downsampling factor)
-    self.ampl     = 0.7             # Output signal amplitude (signal power vary for different RFX900 cards)
+    self.ampl     = 0.9            # Output signal amplitude (signal power vary for different RFX900 cards)
     self.freq     = 915e6                # Modulation frequency (can be set between 902-920)
     self.rx_gain   = 0                   # RX Gain (gain at receiver)
-    self.tx_gain   = 20                 # RFX900 no Tx gain option
+    self.tx_gain   = 30                 # RFX900 no Tx gain option
 
     self.usrp_address_source = "addr=192.168.10.105,recv_frame_size=256"
     self.usrp_address_sink   = "addr=192.168.10.105,recv_frame_size=256"

@@ -41,15 +41,17 @@ namespace gr {
       reader_state-> reader_stats.n_1 = 0; //Number of success slots per frame
       reader_state-> reader_stats.n_0 = 0; //Number of idle slots per frame
 
-      reader_state-> reader_stats.initial_state = 1; //Number of idle slots per frame
-
       reader_state-> reader_stats.output_energy = 0;
+
+      reader_state-> reader_stats.th = 0.0;
 
       reader_state-> reader_stats.tn_k = 0; //Total Number of collision slots 
       reader_state-> reader_stats.tn_1 = 0; //Total Number of success slots 
       reader_state-> reader_stats.tn_0 = 0; //Total Number of idle slots 
       reader_state-> reader_stats.tQA = 0; //Total Number of QA sent
       reader_state-> reader_stats.tQR = 0; //Total Number of QR sent
+
+      reader_state-> reader_stats.stop = 1; 
 
       //reader_state-> reader_stats.Qupdn = 1; //posible values: 0,1,2
 

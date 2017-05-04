@@ -145,6 +145,9 @@ namespace gr {
     
       query_bits.insert(query_bits.end(), &Q_VALUE[FIXED_Q][0], &Q_VALUE[FIXED_Q][4]);
       crc_append(query_bits);
+
+      
+
     }
 
 
@@ -153,6 +156,7 @@ namespace gr {
       ack_bits.resize(0);
       ack_bits.insert(ack_bits.end(), &ACK_CODE[0], &ACK_CODE[2]);
       ack_bits.insert(ack_bits.end(), &in[0], &in[16]);
+      
     }
   
     void reader_impl::gen_query_adjust_bits()
@@ -161,6 +165,8 @@ namespace gr {
       query_adjust_bits.insert(query_adjust_bits.end(), &QADJ_CODE[0], &QADJ_CODE[4]);
       query_adjust_bits.insert(query_adjust_bits.end(), &SESSION[0], &SESSION[2]);
       query_adjust_bits.insert(query_adjust_bits.end(), &Q_UPDN[1][0], &Q_UPDN[1][3]); // Fixed frame size for FSA
+
+     
     }
 
 
@@ -184,6 +190,8 @@ namespace gr {
       std::cout << "| Total success slots : "  <<  reader_state-> reader_stats.tn_1     << std::endl;
       std::cout << "| total QA : "  <<  reader_state-> reader_stats.tQA     << std::endl;
       std::cout << "| total QR : "  <<  reader_state-> reader_stats.tQR     << std::endl;
+
+      std::cout << "| Throughtput : "  <<  reader_state-> reader_stats.th     << std::endl;
       std::cout << " --------------------------"            << std::endl;
 
       std::cout << "| Correctly decoded EPC : "  <<  reader_state->reader_stats.n_epc_correct     << std::endl;
@@ -196,7 +204,7 @@ namespace gr {
         std::cout << std::hex <<  "| Tag ID : " << it->first << "  ";
         std::cout << "Num of reads : " << std::dec << it->second << std::endl;
       }
-      
+           
     }
 
     void
@@ -224,7 +232,7 @@ namespace gr {
       switch (reader_state->gen2_logic_status)
       {
         case START:
-          GR_LOG_INFO(d_debug_logger, "START");
+         GR_LOG_INFO(d_debug_logger, "START");
           memcpy(&out[written], &cw_ack[0], sizeof(float) * cw_ack.size() );
           written += cw_ack.size();
           reader_state->gen2_logic_status = SEND_QUERY;    

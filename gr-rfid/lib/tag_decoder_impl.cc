@@ -384,12 +384,25 @@ namespace gr {
       //If End of frame or Q modified => new frame
       if (reader_state->reader_stats.cur_slot_number == reader_state-> reader_stats.max_slot_number ) 
       {
-        
         reader_state->reader_stats.tn_k = +reader_state->reader_stats.tn_k + reader_state->reader_stats.n_k ; 
         reader_state->reader_stats.tn_1 = +reader_state->reader_stats.tn_1 + reader_state->reader_stats.n_1 ; 
         reader_state->reader_stats.tn_0 = +reader_state->reader_stats.tn_0 + reader_state->reader_stats.n_0 ; 
-        reader_state->reader_stats.tQA +=1; 
+        
 
+        if(reader_state->reader_stats.n_0 == reader_state-> reader_stats.max_slot_number && reader_state-> reader_stats.stop == 1) // ni = L
+        {
+          gettimeofday (&reader_state-> reader_stats.end, NULL);
+          std::cout << "| Execution time : " << reader_state-> reader_stats.end.tv_usec - reader_state-> reader_stats.start.tv_usec << " us" << std::endl;
+          
+          reader_state-> reader_stats.stop = 0;
+          reader_state->reader_stats.th = (((float)reader_state->reader_stats.tn_1)/((float)reader_state->reader_stats.tn_k+(float)reader_state->reader_stats.tn_1+(float)reader_state->reader_stats.tn_0-(float)reader_state->reader_stats.n_0));
+          std::cout << " ------------ **************************   ------------"    << std::endl;
+          std::cout << "| Throughtput : "  <<  reader_state->reader_stats.th     << std::endl;
+          std::cout << "| Number of frames : "  <<  reader_state->reader_stats.tQA     << std::endl;
+          std::cout << "| Number of tags read : "  <<  reader_state->reader_stats.tn_1     << std::endl;
+        }
+
+        reader_state->reader_stats.tQA +=1; 
         reader_state->reader_stats.cur_slot_number = 1;
         reader_state->reader_stats.unique_tags_round.push_back(reader_state->reader_stats.tag_reads.size());
         reader_state->reader_stats.cur_inventory_round += 1;
@@ -397,18 +410,8 @@ namespace gr {
         reader_state->reader_stats.n_1 = 0;
         reader_state->reader_stats.n_0 = 0;
 
-
-        if (reader_state-> reader_stats.initial_state == 1)
-          {
-            reader_state-> reader_stats.initial_state = 0;
-            reader_state->gen2_logic_status = SEND_QUERY; 
-          }
-          else
-          {
-            reader_state->gen2_logic_status = SEND_QUERY_ADJUST;
-          }
-        
-        //reader_state->gen2_logic_status = SEND_QUERY;
+        reader_state->gen2_logic_status = SEND_QUERY_ADJUST;
+                 
         std::cout << " ------------NEW FRAME   ------------"    << std::endl;
       }
 
